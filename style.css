@@ -1,0 +1,170 @@
+Post Archives
+CSS Work
+Toolbox
+Writing
+Speaking
+Other Stuff
+About this site
+CSS Tools: Reset CSS
+The goal of a reset stylesheet is to reduce browser inconsistencies in things like default line heights, margins and font sizes of headings, and so on. The general reasoning behind this was discussed in a May 2007 post, if you're interested. Reset styles quite often appear in CSS frameworks, and the original "meyerweb reset" found its way into Blueprint, among others.
+
+The reset styles given here are intentionally very generic. There isn't any default color or background set for the body element, for example. I don't particularly recommend that you just use this in its unaltered state in your own projects. It should be tweaked, edited, extended, and otherwise tuned to match your specific reset baseline. Fill in your preferred colors for the page, links, and so on.
+
+In other words, this is a starting point, not a self-contained black box of no-touchiness.
+
+If you want to use my reset styles, then feel free! It's all explicitly in the public domain (I have to formally say that or else people ask me about licensing). You can grab a copy of the file to use and tweak as fits you best. If you're more of the copy-and-paste type, or just want an in-page preview of what you'll be getting, here it is.
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	height: 1500px;
+	background: #d5cccc;
+}
+
+.header{
+	width: 100%;
+	height: 100px;
+	background: #663399;
+	margin: auto;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+
+
+.nama h1{
+	font-family: arial;
+	font-weight: bold;
+	margin-left: 20px;
+	margin-top: 10px;
+	color: white;
+	width: 20%;
+}
+
+.list ul{
+	margin-top: -20px;
+	margin-left: -30px
+}
+.list ul li {
+	display: inline-block;
+	margin-top: 20px;
+	margin-left: 10px;
+	
+}
+.list ul li a {
+	text-decoration: none;
+	color: black;
+	background: white;
+	padding: 5px;
+	border-radius: 20px;
+}
+
+.search{
+	position: absolute;
+	top: 45px;
+	left: 75%;
+	padding: 10px;
+	background: white;
+	border-radius: 10px;
+
+}
+.search label{
+	font-family: arial;
+	font-size: 12px;
+}
+
+.konten{
+	background: white;
+	height: 1500px;
+}
+
+.konten img {
+	margin-top: 90px;
+	width: 100%;
+	height: 500px;
+	border-bottom: 5px solid white;
+}
+
+.konten h1{
+	font-family: times new roman;
+	margin-left: 10px;
+}
+
+.konten h3{
+	font-family: serif;
+	font-size: 10px;
+	font-style: italic;
+	margin-top: -20px;
+	margin-left: 10px;
+}
+
+.konten p{
+	text-align: justify;
+	width: 60%;
+	margin-left: 10px;
+}
+
+.footer{
+	width: 100%;
+	height: 50px;
+	background: black;
+	margin-top: -30px;
+	padding:10px;
+}
+
+.footer h1{
+	padding-top: 2px;
+	text-align: center;
+	font-family: times new roman;
+	font-style: italic;
+	color: white;
+	font-size: 15px;
+}
